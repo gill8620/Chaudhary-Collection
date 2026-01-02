@@ -48,10 +48,7 @@ Side Menu → Profile / Settings / Logout
 | Home Screen | Product Detail | Cart Page | Order Confirmation |
 |-------------|----------------|-----------|-------------------|
 | ![Home]
-![1](https://github.com/user-attachments/assets/a497d8df-cef5-4bb4-8261-1196543b2513)
-| ![Product]![3](https://github.com/user-attachments/assets/b02239e3-9fb0-406b-b46c-db2fc137c28a)
-| ![Cart]![5](https://github.com/user-attachments/assets/86fa78ec-f36d-43c4-981b-96b2cd1a45ac)
-| ![Order]![6](https://github.com/user-attachments/assets/b4af1c67-7b3d-435f-ab94-60f930317cdb)
+![1](https://github.com/user-attachments/assets/a497d8df-cef5-4bb4-8261-1196543b2513)| ![Product]![3](https://github.com/user-attachments/assets/b02239e3-9fb0-406b-b46c-db2fc137c28a)| ![Cart]![5](https://github.com/user-attachments/assets/86fa78ec-f36d-43c4-981b-96b2cd1a45ac)| ![Order]![6](https://github.com/user-attachments/assets/b4af1c67-7b3d-435f-ab94-60f930317cdb)
  |
 
 ---
@@ -66,7 +63,7 @@ cd chaudhary-collection
 Install dependencies:
  ```bash
 flutter pub get
-
+```
 
 Firebase configuration:
 1. Create a project in Firebase Console  
@@ -77,7 +74,7 @@ Run the app:
  ```bash
 flutter run
 
-
+```
 ## 🚀 Usage
 - Browse categorized products from the Home Screen  
 - Add products to Cart and manage quantities  
@@ -94,9 +91,8 @@ flutter run
 
 ---
 
-## 🎨 Design & Repository Links
-- **GitHub Repository:** [Insert GitHub Link Here]  
-- **Figma Design File:** [Insert Figma Link Here]  
+## 🎨 Design & Repository Links-
+- **Figma Design File:** [FIGMA](https://www.figma.com/proto/rNBZ1jwzzLsxc95ZmfoqW7/Chaudhary-Collections?node-id=0-1&t=cLOEZAQ2IzcccL4c-1)]  
 
 ---
 
