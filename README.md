@@ -64,7 +64,7 @@ git clone https://github.com/your-username/chaudhary-collection.git
 cd chaudhary-collection
 
 Install dependencies:
-bash
+ ```bash
 flutter pub get
 
 
@@ -74,7 +74,7 @@ Firebase configuration:
 3. Place them inside `android/app/` and `ios/Runner/`  
 
 Run the app:
-bash
+ ```bash
 flutter run
 
 
