@@ -52,6 +52,14 @@ Side Menu → Profile / Settings / Logout
  |
 
 ---
+## Code Snippets
+| main.dart | Welcome Screen | Sign IN |
+|-----------|----------------|---------|
+| ![main](https://github.com/user-attachments/assets/b5d3f709-b898-403c-859d-d3b2e7de97c6) | ![welcome](https://github.com/user-attachments/assets/dd9d1784-a1d2-4c05-82fe-a7a9b61419d8) | ![signin](https://github.com/user-attachments/assets/cbe447a7-307f-47d4-8930-b3628b56ac5f) |
+
+
+
+
 
 ## ⚙️ Installation
 
