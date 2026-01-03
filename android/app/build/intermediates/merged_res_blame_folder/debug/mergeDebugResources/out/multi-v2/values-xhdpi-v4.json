@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.chaudhary.collections.app-mergeDebugResources-124:/values-xhdpi-v4/values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Laptop Mart\\.gradle\\caches\\8.13\\transforms\\1eeb08b709f36bf5971645a866474198\\transformed\\jetified-payments-core-20.52.3\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        }
+    ]
+}

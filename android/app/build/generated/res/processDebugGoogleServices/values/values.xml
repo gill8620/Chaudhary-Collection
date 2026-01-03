@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">192089677138-np016p2edegvldlreg0bl5iaqf109dqt.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">192089677138</string>
+    <string name="google_api_key" translatable="false">AIzaSyD7mqRolWIIPXbYkbh53OpAYZakpKtJHp0</string>
+    <string name="google_app_id" translatable="false">1:192089677138:android:fedd3db59e495edc482e8b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD7mqRolWIIPXbYkbh53OpAYZakpKtJHp0</string>
+    <string name="google_storage_bucket" translatable="false">chaudhary-colections.firebasestorage.app</string>
+    <string name="project_id" translatable="false">chaudhary-colections</string>
+</resources>

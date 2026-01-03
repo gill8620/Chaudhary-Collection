@@ -1,52 +1,75 @@
+import com.Properties
+
 plugins {
     id "com.android.application"
     id "kotlin-android"
-    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
 }
 
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
 android {
-    namespace = "com.example.chaudhary_collections" // Update to match your app's package name
-    compileSdk = flutter.compileSdkVersion // Uses Flutter's compileSdkVersion
-    ndkVersion = flutter.ndkVersion // Uses Flutter's ndkVersion
+    namespace = "com.chaudhary.collections"
+    compileSdk = 36
+    ndkVersion = flutter.ndkVersion
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+        coreLibraryDesugaringEnabled = true
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
+        jvmTarget = JavaVersion.VERSION_17
     }
 
     defaultConfig {
-        applicationId "com.hamzatech.chaudhary"  // Replace with your package name
-        minSdkVersion 23
-        targetSdkVersion 33
-        versionCode 1  // Increment with each release
-        versionName "1.0.0"  // Update this as needed
+        applicationId = "com.hamzatech.chaudhary"
+
+        // Modified minSdk to 21 for Stripe/Firebase compatibility
+        //noinspection GradleIdeError,GradleIdeError
+        minSdkVersion flutter.minSdkVersion
+        targetSdk = 34
+        versionCode = flutterVersionCode.toInteger()
+        versionName = flutterVersionName
+        multiDexEnabled = true
     }
 
     buildTypes {
         release {
-            signingConfig = signingConfigs.debug // Use proper release signing config for production
+            signingConfig = signingConfigs.debug
         }
     }
-
-    // Apply the Google services plugin at the end of the android block
-    apply plugin: 'com.google.gms.google-services'  // Add this line to apply the Google Services plugin
 }
 
 flutter {
-    source = "../.."  // Path to your Flutter project directory
+    source = "../.."
 }
 
 dependencies {
-    // Firebase dependencies
-    implementation 'com.google.firebase:firebase-auth:23.1.0' // For Firebase Authentication
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.0"
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.firebase:firebase-auth:23.1.0'
     implementation 'com.google.android.gms:play-services-auth:21.3.0'
+    implementation 'com.google.firebase:firebase-firestore:25.1.1'
 
-    implementation 'com.google.firebase:firebase-firestore:25.1.1' // For Firestore
-
-    // Other dependencies can go here
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.4'
 }
+
+apply plugin: 'com.google.gms.google-services'
